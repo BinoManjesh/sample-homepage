@@ -23,8 +23,12 @@ h3 {
 
 p {
   color: #505050;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0;
+}
+
+p.smaller {
+  font-size: 18px;
 }
 
 a {
@@ -117,4 +121,28 @@ div.project-card > p {
   font-size: 20px;
   margin: 0 12px 24px 12px;
   text-wrap: wrap;
+}
+
+div.space {
+  height: 100px;
+  visibility: none;
+}
+
+footer > div.text-content > * {
+  color: white;
+}
+
+footer > div.text-content {
+  margin: 0;
+  padding: 0 12px;
+  align-self: stretch;
+  background-color: #0791b2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer > img {
+  width: 100%;
+  display: block;
 }
