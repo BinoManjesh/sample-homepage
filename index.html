@@ -12,11 +12,17 @@
     <title>Homepage</title>
   </head>
   <body>
-    <header>
-      <img src="images/photo-cropped.jpg" alt="Photo of Bino Manjesh" />
-      <h1>Bino Manjesh</h1>
-    </header>
-    <section aria-labelledby="about-me-heading">
+    <section class="about-me" aria-labelledby="about-me-heading">
+      <header>
+        <picture>
+          <source
+            srcset="images/photo-cropped.jpg"
+            media="(max-width: 425px)"
+          />
+          <img src="images/photo.jpg" alt="Photo of Bino Manjesh" />
+        </picture>
+        <h1>Bino Manjesh</h1>
+      </header>
       <h2 id="about-me-heading">About me</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum magnam
