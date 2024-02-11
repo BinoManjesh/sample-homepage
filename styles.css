@@ -142,6 +142,10 @@ div.space {
   visibility: none;
 }
 
+footer {
+  background-color: #0791b2;
+}
+
 footer > div.text-content > * {
   color: white;
 }
@@ -150,13 +154,12 @@ footer > div.text-content {
   margin: 0;
   padding: 0 12px;
   align-self: stretch;
-  background-color: #0791b2;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-footer > img {
+footer img {
   width: 100%;
   display: block;
 }
@@ -189,6 +192,27 @@ footer > img {
   section.about-me > nav.profile-links {
     display: none;
   }
+
+  footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  footer > div.text-content {
+    flex-grow: 6;
+    width: 0;
+  }
+
+  footer picture {
+    flex-grow: 4;
+    width: 0;
+    margin: 24px;
+  }
+
+  footer img {
+    width: 100%;
+  }
 }
 
 @media (1024px <= width) {
@@ -220,5 +244,13 @@ footer > img {
     float: right;
     justify-content: flex-end;
     gap: 0.5em;
+  }
+
+  footer > div.text-content {
+    flex-grow: 1;
+  }
+
+  footer picture {
+    flex-grow: 1;
   }
 }
